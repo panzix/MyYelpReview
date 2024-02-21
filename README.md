@@ -1,0 +1,1 @@
+# MyYelpReview : This is a lifestyle service information and review platform where users can find information and user reviews for various lifestyle services such as restaurants, shops, entertainment venues, and more. Dianping provides users with convenient search and comparison features, enabling them to make better consumer decisions.
