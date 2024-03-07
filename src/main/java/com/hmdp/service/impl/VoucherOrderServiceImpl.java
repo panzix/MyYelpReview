@@ -248,7 +248,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         }
         // 3.判断秒杀是否已经结束
         if (voucher.getEndTime().isBefore(LocalDateTime.now())) {
-            // 尚未开始
+            // 已经结束
             return Result.fail("秒杀已经结束！");
         }
         // 4.判断库存是否充足
@@ -336,7 +336,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             // 5.2.判断是否存在
             if (count > 0) {
                 // 用户已经购买过了
-                return Result.fail("用户已经购买过一次！");
+                return Result.fail("不能购买超过一次！");
             }
 
             // 6.扣减库存
